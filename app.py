@@ -54,8 +54,7 @@ st.markdown("""
 st.markdown("""
 <div class='subtitle'>
     Enter a sentence related to Germany. The model will predict whether the sentiment is
-    <b style='color:green;'>Positive</b>,
-    <b style='color:orange;'>Neutral</b>, or
+    <b style='color:green;'>Positive</b> or
     <b style='color:red;'>Negative</b>.
 </div>
 """, unsafe_allow_html=True)
@@ -67,16 +66,14 @@ sentence = st.text_input("Example: Germany has a strong economy and beautiful la
 # Prediction
 if sentence:
     X_input = vectorizer.transform([sentence])
-    prediction = model.predict(X_input)[0]
+    prediction = model.predict(X_input)[0].lower()
 
-    if prediction.lower() == "positive":
+    if prediction == "positive":
         st.success("🧠 Predicted Sentiment: **Positive** 😊")
-    elif prediction.lower() == "negative":
+    elif prediction == "negative":
         st.error("🧠 Predicted Sentiment: **Negative** 😟")
-    elif prediction.lower() == "neutral":
-        st.info("🧠 Predicted Sentiment: **Neutral** 😐")
     else:
-        st.warning(f"Prediction: {prediction}")
+        st.warning("⚠️ Prediction is not Positive or Negative. Please try a more specific sentence.")
 
 # Footer
 st.markdown("<div class='footer'>Germany Sentiment Classifier powered by Applied Artificial Intelligence</div>", unsafe_allow_html=True)
