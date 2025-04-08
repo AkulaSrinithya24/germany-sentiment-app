@@ -25,12 +25,12 @@ st.markdown("""
         }
         .subtitle {
             font-size: 1.1rem;
-            color: #beced1;
+            color: #010405;
             margin-bottom: 25px;
         }
         .input-label {
             font-size: 1rem;
-            color: #93729e;
+            color: #ac1abd;
             margin-bottom: 5px;
         }
         .footer {
