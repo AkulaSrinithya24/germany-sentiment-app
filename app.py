@@ -12,7 +12,7 @@ st.set_page_config(page_title="Germany Sentiment Classifier", layout="centered")
 st.markdown("""
     <style>
         body {
-            background-color: #a9ebeb;
+            background-color: #0e1117;
         }
         .title {
             display: flex;
