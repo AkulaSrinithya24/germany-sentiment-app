@@ -20,17 +20,17 @@ st.markdown("""
             font-family: 'Segoe UI', sans-serif;
             font-size: 2.2rem;
             font-weight: 700;
-            color: #1a1a1a;
+            color: #0713f5;
             margin-bottom: 10px;
         }
         .subtitle {
             font-size: 1.1rem;
-            color: #444;
+            color: #9ee9f7;
             margin-bottom: 25px;
         }
         .input-label {
             font-size: 1rem;
-            color: #333;
+            color: #93729e;
             margin-bottom: 5px;
         }
         .footer {
