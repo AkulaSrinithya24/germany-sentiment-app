@@ -25,7 +25,7 @@ st.markdown("""
         }
         .subtitle {
             font-size: 1.1rem;
-            color: #9ee9f7;
+            color: #beced1;
             margin-bottom: 25px;
         }
         .input-label {
