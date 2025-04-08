@@ -37,7 +37,7 @@ st.markdown("""
             margin-top: 60px;
             font-size: 0.9rem;
             text-align: center;
-            color: #999;
+            color: #ab4fc9;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -64,4 +64,4 @@ if sentence:
     st.success(f"🧠 Predicted Sentiment: **{prediction}**")
 
 # Footer
-st.markdown("<div class='footer'>Germany Sentiment Classifier powered by Machine Learning</div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>Germany Sentiment Classifier powered by Applied Artificial Intelligence</div>", unsafe_allow_html=True)
